@@ -1,0 +1,238 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather';
+  color: #384047;
+}
+
+header {
+  background-color: #2d3945;
+}
+
+h1 {
+  padding: 1.125em 0; /* 18px 0 */
+  margin: 0;
+  font-size: 1.25em; /* 20px 0 */
+  font-weight: normal;
+  text-align: center;  
+  text-transform: uppercase;  
+  color: white;
+}
+
+.above-form-container{
+  margin: 0 1em; /* 0 16px */
+  padding: 0 1.125em; /* 0 18px */
+}
+
+h2 {
+  margin-top: 1.25em; /* 20px */
+  font-size: 1.125em; /* 18px */
+  font-weight: bold; 
+  text-align: center; 
+  color: #2d3945;
+}
+
+.above-form-container p {
+  padding: 0 0 1.25em 0; /* 0 0 20px 0 */
+  margin-bottom: 1.25em;/* 20px */
+  font-size: 0.875em; /* 14px */
+  color: #a4a9ae;
+  text-align: center;  
+}
+
+form {
+  margin: 0.2em 1em 0.5em 1em; /* 3.2px 16px 8px 16px */
+  border-top: 0.15em solid #2d3945; /* 2.4px */
+}
+
+fieldset {
+  padding: 0em;
+  margin: 0em;
+  border: 1px solid black;
+  border: none;
+}
+
+.fieldsetContactInformation {
+  border-bottom: 0.15em solid #2d3945;  
+}
+
+fieldset label {  
+  line-height: 2;
+}
+
+legend {
+  padding: 1.25em 0;/* 20px 0 */
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.125em; /* 18px*/
+  color: #2d3945; 
+}
+
+label {
+  display: block;
+  margin-bottom: 0.625em; /* 10px */
+  color: #2d3945; 
+  padding-top: 1px;
+  font-size: 0.875em; /* 14px */
+  color: #55687a;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.selected label {
+  color: #929eaa
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  border: none;
+  border-radius: 5px;
+  font-size: 0.875em; /* 12px */
+  margin: 0;
+  outline: 0;
+  padding: 1em; /* 16px */
+  width: 100%;
+  background-color: #eff0f1;
+  color: #8a97a0;
+  margin-bottom: 13px;
+}
+
+textarea {
+  height: 7em;
+}
+
+input[type="number"] {
+  width: auto;
+}
+
+input:last-child,
+textarea {
+  margin-bottom: 2em; /* 32px */
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #46698b; /* darkblue*/
+  background-color: #fff;
+}
+
+button:focus {
+  background-color: #46698b;
+  font-weight: bold; 
+}
+
+/*
+Input Placeholder Styling
+https://designpieces.com/2012/12/how-to-style-html5-input-placeholder-with-css/
+*/
+
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.75em; /* 12px */
+}
+:-moz-placeholder {
+  text-align: right;
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 0.25em 0.75em 0; /* 0 4px 12px 0*/
+}
+
+select {
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  margin-bottom: 10px;
+  border: 0;
+  color: #fff;
+  background-color: #4ebbb5;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%; 
+}
+
+footer { 
+  margin: 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.75em; /* 12px */
+  font-style: italic;
+  color: #8a97a0;
+  padding: 1em 0 2em 0;
+  margin: 0;
+}
+
+
+/* ================================= 
+  Media Query
+==================================== */
+
+@media (min-width: 768px) {
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-bottom: 0em;
+  }
+
+  legend {
+    padding-top: 3em;
+  }
+
+  .above-form-container,
+  form {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+  }
+
+  .fieldsetContactInformation,
+  .fieldsetNewsletter {
+    background-color: #fafafa;
+  }
+
+  .fieldsetContactInformation label {
+    float: left;
+    width: 30%;   
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  .fieldsetContactInformation textarea,
+  .fieldsetContactInformation select {
+    float: left;
+    width:70%;
+    margin-bottom: 1.5em;
+  }
+
+  input:last-child {
+      margin-bottom: 4em;
+  }
+
+}
